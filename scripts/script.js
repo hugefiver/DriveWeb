@@ -27,7 +27,7 @@ export async function download_meta(meta) {
             return null;
     }
 
-    const url = `http://i0.hdslb.com/bfs/album/${hash}.${ext}`;
+    const url = `https://i0.hdslb.com/bfs/album/${hash}.${ext}`;
     try {
         const resp = await fetch(url, { referrer: '' });
         const ab = await resp.arrayBuffer();
