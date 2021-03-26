@@ -68,7 +68,8 @@ export async function search() {
         b.innerText = !meta
             ? "Cannot parse meta link. "
             : "Download meta error. ";
-        msg_box.replaceWith(b);
+        msg_box.innerHTML = '';
+        msg_box.appendChild(b);
         return 
     }
 
