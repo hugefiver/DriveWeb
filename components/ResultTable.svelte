@@ -23,7 +23,7 @@
 </style>
 
 <table align="left" style="width: 100%; border: double 3px;">
-    <th id="table-header">Result</th>
+    <th id="table-header" colspan="3">Result</th>
     <tbody id="results-body" board="1">
         <tr>
             <td id="filename" align="left" colspan="3">
@@ -41,7 +41,7 @@
                 <td>{block.id}</td>
                 <td>
                     <details>
-                        URL: {block.info.url}
+                        URL: {block.info.url} <br/>
                         Hash: {block.info.sha1}
                     </details>
                 </td>
