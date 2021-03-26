@@ -4,7 +4,15 @@
     let filesize = data.size;
     let hash = data.sha1;
 
-    let blocks = data.block.map((v, i) =>{ return {info: v, id: i} })
+    let blocks = data.block
+        .map((v, i) =>{ return {info: v, id: i} });
+
+    blocks.forEach(e => {
+        let url = e.info.url;
+        if (/^http\:\/\//i.test(url)) {
+            e.info.url = url.replace(/^http/i, 'https');
+        }
+    });
 </script>
 
 <style>
