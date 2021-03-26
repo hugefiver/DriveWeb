@@ -1,0 +1,18 @@
+{
+  "name": "driveweb",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel serve ./index.html",
+    "build": "parcel build --dist-dir ./dist/release ./index.html"
+  },
+  "dependencies": {
+    "fast-png": "^5.0.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.13.12",
+    "parcel": "^2.0.0-beta.2",
+    "parcel-transformer-svelte": "^1.1.1",
+    "svelte": "^3.35.0"
+  }
+}
