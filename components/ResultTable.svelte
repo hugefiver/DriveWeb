@@ -1,4 +1,6 @@
 <script>
+    import download from '../scripts/chunk_dl';
+
     export let data;
     let filename = data.filename;
     let filesize = data.size;
@@ -13,6 +15,14 @@
             e.info.url = url.replace(/^http/i, 'https');
         }
     });
+
+    function download_file() {
+        let chunks = [];
+        blocks.forEach(async({info: {url: u}}, i) => {
+            chunks[i] = await download(u)
+        })
+        return 
+    }
 </script>
 
 <style>
