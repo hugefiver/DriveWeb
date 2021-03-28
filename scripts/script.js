@@ -1,6 +1,5 @@
 import { decode } from 'fast-png';
 import ResultTable from '../components/ResultTable.svelte';
-import { Prop } from 'svelte';
 
 function dec_link(s) {
     let patt = /((bdex|bdrive):\/\/)?([a-fA-F0-9]{40})/;
